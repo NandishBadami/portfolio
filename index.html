@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Nandish Badami</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/5/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="icon" href="BN Logo.jpg" type="image/jpg">
+<style>
+body,h1,h2,h3,h4,h5,h6 {font-family: "Lato", sans-serif;}
+body, html {
+  height: 100%;
+  color: black;
+  line-height: 1.8;
+}
+
+/* Create a Parallax Effect */
+.bgimg-1, .bgimg-2, .bgimg-3 {
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+/* First image (Logo. Full height) */
+.bgimg-1 {
+  background-image: url('bgimg1.jpg');
+  min-height: 550px;
+}
+
+/* Second image (Portfolio) */
+.bgimg-2 {
+  background-image: url("https://cdn.mos.cms.futurecdn.net/9QTpESGBXa32D29J77VR3d.jpg");
+  min-height: 400px;
+}
+
+/* Third image (Contact) */
+.bgimg-3 {
+  background-image: url("/w3images/parallax3.jpg");
+  min-height: 400px;
+}
+
+.w3-wide {letter-spacing: 10px;}
+.w3-hover-opacity {cursor: pointer;}
+
+/* Turn off parallax scrolling for tablets and phones */
+@media only screen and (max-device-width: 1600px) {
+  .bgimg-2, .bgimg-3 {
+    background-attachment: scroll;
+    min-height: 400px;
+  }
+}
+</style>
+</head>
+<body>
+
+<!-- Navbar (sit on top) -->
+<div class="w3-top">
+  <div class="w3-bar" id="myNavbar">
+    <a class="w3-bar-item w3-button w3-hover-black w3-hide-medium w3-hide-large w3-right" href="javascript:void(0);" onclick="toggleFunction()" title="Toggle Navigation Menu">
+      <i class="fa fa-bars"></i>
+    </a>
+    <a href="#home" class="w3-bar-item w3-button">HOME</a>
+    <a href="#contact" class="w3-bar-item w3-button w3-hide-small"><i class="fa fa-envelope"></i> CONTACT</a>
+    <a href="#about" class="w3-bar-item w3-button w3-hide-small"><i class="fa fa-user"></i> ABOUT</a>
+    <a href="#portfolio" class="w3-bar-item w3-button w3-hide-small"><i class="fa fa-th"></i> PROJECTS</a>
+  </div>
+
+  <!-- Navbar on small screens -->
+  <div id="navDemo" class="w3-bar-block w3-white w3-hide w3-hide-large w3-hide-medium">
+    <a href="#contact" class="w3-bar-item w3-button" onclick="toggleFunction()">CONTACT</a>
+    <a href="#about" class="w3-bar-item w3-button" onclick="toggleFunction()">ABOUT</a>
+    <a href="#portfolio" class="w3-bar-item w3-button" onclick="toggleFunction()">PROJECTS</a>
+  </div>
+</div>
+
+<!-- First Parallax Image with Logo Text -->
+<div class="bgimg-1 w3-display-container" id="home">
+  <div class="w3-display-middle" style="white-space:nowrap;">
+    <span class="w3-center w3-padding-large w3-black w3-xlarge w3-wide w3-animate-opacity">Nandish Badami</span> <br>
+  </div>
+</div>
+
+<!-- Container (Contact Section) -->
+<div class="w3-content w3-container" id="contact">
+  <h3 class="w3-center">Contact</h3>
+
+  <div class="w3-row w3-section">
+    <div class="w3-col m8 w3-panel">
+      <div class="w3-large w3-margin-bottom">
+        <i class="fa fa-map-marker fa-fw w3-hover-text-black w3-xlarge w3-margin-right"></i>India<br>
+        <i class="fa fa-phone fa-fw w3-hover-text-black w3-xlarge w3-margin-right"></i> Phone: +91 9148706524<br>
+        <i class="fa fa-envelope fa-fw w3-hover-text-black w3-xlarge w3-margin-right"></i> Email: nandishbadami02@gmail.com<br>
+        <i class="fa fa-linkedin fa-fw w3-hover-text-black w3-xlarge w3-margin-right"></i> <a href="https://www.linkedin.com/in/nandish-badami/">in/nandish-badami</a> <br>
+        <i class="fa fa-youtube fa-fw w3-hover-text-black w3-xlarge w3-margin-right"></i> <a href="https://www.youtube.com/@NandishBadami">@NandishBadami</a> <br>
+        <i class="fa fa-github fa-fw w3-hover-text-black w3-xlarge w3-margin-right"></i> <a href="https://www.github.com/NandishBadami">/NandishBadami</a> <br>
+        <i class="fa fa-link fa-fw w3-hover-text-black w3-xlarge w3-margin-right"></i> <a href="https://www.github.com/NandishBadami">Open Resume</a> <br>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Container (About Section) -->
+<div class="w3-content w3-container" id="about">
+  <h3 class="w3-center">ABOUT ME</h3>
+  <p class="w3-center"><em><b>Software / Web Developer</b></em></p>
+  <p>My curiosity to learn how Internet and Web works has what driven me to become a developer. I am a <b>Full Stack Web Developer</b> who knows various technology stacks ranging from <b>Python</b> to <b>Javascript</b>. In Python I know web-frameworks like <b>Django</b> and <b>Flask</b> and has built multiple scalable web apps using such. In Javascript I know <b>NodeJs</b> and <b>ExpressJs</b> which are used to build backend of a website. By now you might have already guessed that I am more interested in back-end development and that is actually very true, I like building back-end systems rather than designing web pages. Well I am not against designers, UI/UX has got its own value in the market but its just not motivating for me. I am currently learning <b>React</b> and <b>AI</b> to stay relavent in the market. I also have learnt langues like: <b>C, C# and Java</b> as part of my collage academics.</p>
+  <div class="w3-row">
+    <div class="w3-col m6 w3-center w3-padding-large">
+      <p><b><i class="fa fa-university w3-margin-right"></i>My Education</b></p><br>
+      <img src="bgimg2.jpg" class="w3-round w3-image" alt="Photo of Me" width="500" height="333">
+    </div>
+
+    <br><br>
+    <!-- Hide this text on small devices -->
+    <div class="w3-col m6 w3-padding-large">
+      <p><b>Bachelor of Computer Application <br> Nov 2021 - Aug 2024 <br> Bapuji Institute Of Hi-Tech Education Davangere • India</b> <br> Studied core computer science fundamentals including programming languages, data structures, algorithms, operating systems, and networking.</p>
+      <p><b>Master of Computer Application <br> Apr 2025 - Apr 2027 <br>  Jain Online University • India</b> <br> Studying AI/ML as I have took AI Specialization and exploring various other technologies. I am doing it online so that I can give more time to Software Development instead of Collage Academics.</p>
+    </div>
+  </div>
+</div>
+
+<!-- Second Parallax Image with Portfolio Text -->
+<div class="bgimg-2 w3-display-container" id="portfolio">
+  <div class="w3-display-middle">
+    <span class="w3-xxlarge w3-text-white w3-wide" style="background-color: black;">Projects</span>
+  </div>
+</div>
+
+<!-- Container (Portfolio Section) -->
+<div class="w3-content w3-container">
+  <p class="w3-center"><b>I Have listed all the web projects I have built from big to small.</b></p>
+
+  <h3 class="w3-center">1. Chat App</h3>
+  <p class="w3-center"><em>Allows Individual users to chat/text with each other in real time. <br> Created using Python, Django, Javascript and SQLite. <br> Live Website Link: <a href="https://chatappp.pythonanywhere.com/" style="color: blue;">https://chatappp.pythonanywhere.com/</a><br>Source Code: <a href="https://github.com/NandishBadami/Chat-App" style="color: blue;">https://github.com/NandishBadami/Chat-App</a><br>Youtube video Link: <a href="https://youtu.be/Bw0otB_UwD0?si=b1cTC6wVZU_no0Et" style="color: blue;">https://youtu.be/Bw0otB_UwD0?si=b1cTC6wVZU_no0Et</a></em></p><br>
+  
+  <h3 class="w3-center">2. Social Netowrk</h3>
+  <p class="w3-center"><em>Allowes users to create post, follow friends, like posts and edit posts. <br> Created using Python, Django, Javascript and SQLite. <br> Live Website Link: <a href="https://socailappp.pythonanywhere.com/" style="color: blue;">https://socailappp.pythonanywhere.com/</a><br>Source Code: <a href="https://github.com/NandishBadami/Social-Network" style="color: blue;">https://github.com/NandishBadami/Social-Network</a><br>Youtube video Link: <a href="https://youtu.be/WlYeVEh9piQ?si=vYeTbqVU866xl1ob" style="color: blue;">https://youtu.be/WlYeVEh9piQ?si=vYeTbqVU866xl1ob</a></em></p><br>
+
+  <h3 class="w3-center">3. File Uploader</h3>
+  <p class="w3-center"><em>Allowes users to create their own account (Authentication) and upload files into the cloud much like google drive or google photos. <br> Created using NodeJs, ExpressJs, Javascript, Postgresql, PassportJs, Prisma ORM and Cloudinary for file storage. <br> Note: Users can upload only files that are less than 10 MB and the upload speed is also very slow. <br> Live Website Link: <a href="https://file-uploader-iev8.onrender.com/" style="color: blue;">https://file-uploader-iev8.onrender.com/</a><br>Source Code: <a href="https://github.com/NandishBadami/Odin-File-Uploader" style="color: blue;">https://github.com/NandishBadami/Odin-File-Uploader</a></em></p><br>
+  
+  <h3 class="w3-center">4. Todo App</h3>
+  <p class="w3-center"><em>Created using Python and its web-framework Django. <br> This project uses Sqlite3 to store todo lists. <br> This project demonstrates CRUD behavior of the Application which means users can create todo lists, read todo lists and also can delete todo lists. <br> Live Website Link: <a href="https://todoappp.pythonanywhere.com/" style="color: blue;">https://todoappp.pythonanywhere.com/</a><br>Source Code: <a href="https://github.com/NandishBadami/Todo-App" style="color: blue;">https://github.com/NandishBadami/Todo-App</a></em></p><br>
+  
+  <h3 class="w3-center">5. Web Scraper</h3>
+  <p class="w3-center"><em>Created using Python and BeautifulSoup. <br> In this project we have taken the craigslist website as our source
+website from which we take out all the details that is posted on
+the website and put those details into our website in nice looking
+web pages.<br>Source Code: <a href="https://github.com/NandishBadami/craigslist-web-scraper" style="color: blue;">https://github.com/NandishBadami/craigslist-web-scraper</a></em></p><br>
+</div>
+
+<!-- Footer -->
+<footer class="w3-center w3-black w3-padding-64 w3-hover-opacity-off">
+  <a href="#home" class="w3-button w3-light-grey"><i class="fa fa-arrow-up w3-margin-right"></i>To the top</a>
+</footer>
+ 
+<script>
+// Modal Image Gallery
+function onClick(element) {
+  document.getElementById("img01").src = element.src;
+  document.getElementById("modal01").style.display = "block";
+  var captionText = document.getElementById("caption");
+  captionText.innerHTML = element.alt;
+}
+
+// Change style of navbar on scroll
+window.onscroll = function() {myFunction()};
+function myFunction() {
+    var navbar = document.getElementById("myNavbar");
+    if (document.body.scrollTop > 100 || document.documentElement.scrollTop > 100) {
+        navbar.className = "w3-bar" + " w3-card" + " w3-animate-top" + " w3-white";
+    } else {
+        navbar.className = navbar.className.replace(" w3-card w3-animate-top w3-white", "");
+    }
+}
+
+// Used to toggle the menu on small screens when clicking on the menu button
+function toggleFunction() {
+    var x = document.getElementById("navDemo");
+    if (x.className.indexOf("w3-show") == -1) {
+        x.className += " w3-show";
+    } else {
+        x.className = x.className.replace(" w3-show", "");
+    }
+}
+</script>
+
+</body>
+</html>
