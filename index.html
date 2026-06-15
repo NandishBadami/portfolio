@@ -9,6 +9,44 @@
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 <link rel="icon" href="BN Logo.jpg" type="image/jpg">
 <style>
+/* Base Styles for the Certificates Section (Applies to all screens) */
+.certificates-container {
+  display: flex;
+  justify-content: center;
+  gap: 25px; /* Spaces out certificates side-by-side on desktop */
+  flex-wrap: nowrap; 
+  padding: 20px;
+}
+
+.certificate-card {
+  flex: 1;
+  max-width: 350px; /* Limits size on desktop */
+  text-align: center;
+}
+
+.certificate-card img {
+  width: 100%;
+  height: auto; /* Ensures images scale cleanly without stretching */
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+
+/* --- MOBILE ONLY RESPONSIVE RULES --- */
+@media (max-width: 768px) {
+  .certificates-container {
+    flex-direction: column; /* Switches side-by-side layout into a single vertical column */
+    align-items: center;    /* Centers certificates on mobile screens */
+    gap: 30px;              /* Adds clear spacing between stacked items */
+    padding: 10px;
+  }
+
+  .certificate-card {
+    width: 100%;            /* Allows cards to stretch comfortably on mobile phone views */
+    max-width: 90%;         /* Keeps a small horizontal breathing margin near screen borders */
+  }
+}
+
+
 body,h1,h2,h3,h4,h5,h6 {font-family: "Lato", sans-serif;}
 body, html {
   height: 100%;
@@ -124,21 +162,24 @@ body, html {
   </div>
 </div>
 
-<div id="certificates">
-<h3 class="w3-center">Worthy Certificates</h3>
-  <a target="_blank" href="https://certificates.cs50.io/2ff3eb17-060a-446a-bff4-d6659305db5a.pdf?size=letter"><p class="w3-center"><b>CS50's Introduction to Computer Science</b></p>
-  <div style="display: flex; justify-content: center; align-items: center; height: 100vh;">
-  <a target="_blank" href="https://certificates.cs50.io/2ff3eb17-060a-446a-bff4-d6659305db5a.pdf?size=letter"><img src="CS50X-Certificate.jpg" width="700px"></a>
+<section id="certificates">
+  <h2 class="w3-center">Worthy Certificates</h2>
+  
+  <div class="certificates-container">
+    <div class="certificate-card">
+      <a target="_blank" href="https://certificates.cs50.io/2ff3eb17-060a-446a-bff4-d6659305db5a.pdf?size=letter"><img src="CS50X-Certificate.jpg" alt="CS50X Introduction to Computer Science"></a>
+      <a target="_blank" href="https://certificates.cs50.io/2ff3eb17-060a-446a-bff4-d6659305db5a.pdf?size=letter"><h3>CS50's Introduction to Computer Science (CS50X)</h3></a>
+    </div>
+    <div class="certificate-card">
+      <a target="_blank" href="https://certificates.cs50.io/24d555ac-64ca-4193-a44e-431a9c9e50ab.pdf?size=letter"><img src="CS50P-Certificate.jpg" alt="CS50P Programming with Python"></a>
+      <a target="_blank" href="https://certificates.cs50.io/24d555ac-64ca-4193-a44e-431a9c9e50ab.pdf?size=letter"><h3 class="w3-center">CS50's Introduction to Programming with Python (CS50P)</h3></a>
+    </div>
+    <div class="certificate-card">
+      <a target="_blank" href="https://certificates.cs50.io/3b43195b-ef18-46d3-bd22-b5bd8f25a5a4.pdf?size=letter"><img src="CS50W-Certificate.jpg" alt="CS50W Web Programming"></a>
+      <a target="_blank" href="https://certificates.cs50.io/3b43195b-ef18-46d3-bd22-b5bd8f25a5a4.pdf?size=letter"><h3 class="w3-center">CS50's Web Programming with Python and Javascript (CS50W)</h3></a>
+    </div>
   </div>
-  <a target="_blank" href="https://certificates.cs50.io/24d555ac-64ca-4193-a44e-431a9c9e50ab.pdf?size=letter"><p class="w3-center"><b>CS50's Introduction to Programming with Python</b></p></a>
-  <div style="display: flex; justify-content: center; align-items: center; height: 100vh;">
-  <a target="_blank" href="https://certificates.cs50.io/24d555ac-64ca-4193-a44e-431a9c9e50ab.pdf?size=letter"><img src="CS50P-Certificate.jpg" width="700px"></a>
-  </div>
-  <a target="_blank" href="https://certificates.cs50.io/3b43195b-ef18-46d3-bd22-b5bd8f25a5a4.pdf?size=letter"><p class="w3-center"><b>CS50's Web Programming with Python and Javascript</b></p></a>
-  <div style="display: flex; justify-content: center; align-items: center; height: 100vh;">
-  <a target="_blank" href="https://certificates.cs50.io/3b43195b-ef18-46d3-bd22-b5bd8f25a5a4.pdf?size=letter"><img src="CS50W-Certificate.jpg" width="700px"></a>
-  </div>
-</div>
+</section>
 
 <!-- Second Parallax Image with Portfolio Text -->
 <div class="bgimg-2 w3-display-container" id="portfolio">
